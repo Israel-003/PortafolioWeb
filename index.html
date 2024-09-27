@@ -31,17 +31,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar-toggler">
                 <a class="navbar-brand" href="#">
-                    <img src="images/binary-code.png" alt="logo pagina" width="50">
+                    <img src="images/rubi.png" alt="logo pagina">
                 </a>
                 <ul class="navbar-nav d-flex justify-content-center aling-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                        <a class="nav-link active" aria-current="page" href="#about-me">Sobre mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Proyectos</a>
+                        <a class="nav-link active" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Contacto</a>
+                        <a class="nav-link active" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -62,7 +62,7 @@
     </section>
 
     <!-- seccion about me -->
-    <section class="sobre-mi seccion-oscura">
+    <section class="sobre-mi seccion-oscura" id="about-me">
         <div class="contenedor">
             <h2 class="seccion-titulo">Conoce a Israel N.</h2>
             <p class="seccion-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quidem ipsum
@@ -125,7 +125,7 @@
     </section>
 
     <!-- Proyectos -->
-    <section class="proyectos seccion-clara d-flex flex-column">
+    <section class="proyectos seccion-clara d-flex flex-column" id="proyectos">
         <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
         <h3 class="seccion-descripcion">Estos son proyecto que he realizado recientemente.</h3>
 
@@ -226,25 +226,132 @@
 
     <!-- seccion de articulos -->
     <section class="articulos justify-content-start">
-        <h2>Articulos</h2>
+        <h2 class="seccion-titulo texto-negro">Articulos</h2>
         <div class="card">
-        <div class="card-header">
-            <h5>Más recientes</h5>
+            <div class="card-header">
+                <h5>Más recientes</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <a href="https://www.freecodecamp.org/news/the-php-handbook/" target="_blank">
+                    <li class="list-group-item">Aprende PHP</li>
+                </a>
+
+                <a href="https://www.freecodecamp.org/news/the-php-handbook/" target="_blank">
+                    <li class="list-group-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est officiis
+                        tempore deleniti delectus cumque eveniet quam incidunt nostrum aliquid. Nostrum quam nisi veniam
+                        mollitia nam repudiandae nulla cum voluptas id!</li>
+                </a>
+
+                <a href="https://www.freecodecamp.org/news/the-php-handbook/" target="_blank">
+                    <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam
+                        rem autem eaque est quam modi laborum, mollitia qui adipisci laboriosam eius dicta earum
+                        molestiae pariatur sequi fuga quaerat suscipit.</li>
+                </a>
+
+                <a href="https://www.freecodecamp.org/news/the-php-handbook/" target="_blank">
+                    <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam
+                        rem autem eaque est quam modi laborum, mollitia qui adipisci laboriosam eius dicta earum
+                        molestiae pariatur sequi fuga quaerat suscipit.</li>
+                </a>
+            </ul>
         </div>
-        <ul class="list-group list-group-flush">
-            <a href="https://www.freecodecamp.org/news/the-php-handbook/" target="_blank"><li class="list-group-item">Aprende PHP</li></a>
 
-            <a href="https://www.freecodecamp.org/news/the-php-handbook/" target="_blank"><li class="list-group-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est officiis tempore deleniti delectus cumque eveniet quam incidunt nostrum aliquid. Nostrum quam nisi veniam mollitia nam repudiandae nulla cum voluptas id!</li></a>
+        <a href="https://www.google.com" target="_blank"><button type="button" class="btn btn-info">Ver más <i
+                    class="bi bi-arrow-right-circle-fill"></i></button></a>
+    </section>
 
-            <a href="https://www.freecodecamp.org/news/the-php-handbook/" target="_blank"><li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam rem autem eaque est quam modi laborum, mollitia qui adipisci laboriosam eius dicta earum molestiae pariatur sequi fuga quaerat suscipit.</li></a>
+    <!-- seccion de testimonios -->
+    <section class="testimonios seccion-clara">
+        <h2 class="seccion-titulo">Testimonios</h2>
+        <h3 class="seccion-descripcion">Testimonios de mi compañeros</h3>
 
-            <a href="https://www.freecodecamp.org/news/the-php-handbook/" target="_blank"><li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam rem autem eaque est quam modi laborum, mollitia qui adipisci laboriosam eius dicta earum molestiae pariatur sequi fuga quaerat suscipit.</li></a>
-            
-        </ul>
+        <!-- Carrucel -->
+        <div id="testimonios-carrusel" class="carousel carousel-dark slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img class="testimonio-imagen rounded-circle" src="images/web-development.png" alt="cliente 1">
+                        <p class="testimonio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consequuntur beatae quis quos aut ducimus quod ipsam mollitia odit.</p>
+                        <div>
+                            <p class="cliente">Nombre del cliente</p>
+                            <p class="cargo">Cargo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="testimonio-imagen rounded-circle" src="images/me.jpg" alt="cliente 1">
+                        <p class="testimonio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consequuntur beatae quis quos aut ducimus quod ipsam mollitia odit.</p>
+                        <div>
+                            <p class="cliente">Nombre del cliente</p>
+                            <p class="cargo">Cargo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="testimonio-imagen rounded-circle" src="images/web-development.png" alt="cliente 1">
+                        <p class="testimonio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Consequuntur beatae quis quos aut ducimus quod ipsam mollitia odit.</p>
+                        <div>
+                            <p class="cliente">Nombre del cliente</p>
+                            <p class="cargo">Cargo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- seccion contacto -->
+    <section class="contacto seccion-oscura">
+        <div class="container">
+            <div class="container text-center rectangulo d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        ¡Contactame!
+                    </div>
+                    <div class="col-12 col-md-4 descripcion">
+                        Hablame para desarrollar tu proyecto.
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:israeln376@gmail.com">
+                            <button type="button">
+                                Contacto
+                                <i class="bi bi-envelope-at-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-
+    <!-- pie de pagina -->
+    <footer class="seccion-oscura d-flex flex-column aling-items-center justify-content-center" id="contacto">
+        <img src="images/rubi.png" class="footer-logo" alt="logo del prtafolio" width="50">
+        <p class="footer-texto text-center">Aprendiendo Todos los dias</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap aling-items-center justify-content-center">
+            <a href="https://www.facebook.com/israel.nunezmartinez.35" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/israeln003/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/Israel-003" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="mailto:israeln376@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
+        </div>
+        <div class="derechos-de-autor text-center">Creado por Israel (2024) &#169;</div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
